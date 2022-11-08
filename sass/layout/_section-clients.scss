@@ -1,0 +1,30 @@
+.clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    justify-content: center;
+  }
+  .clients-card {
+    width: 170px;
+    height: 92px;
+  }
+  .clients-card-ref {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--bordergrey);
+    border-radius: 4px;
+    fill: var(--bordergrey);
+    cursor: pointer;
+    transition: border-color var(--time-animation) var(--cubic-bezier),
+      fill var(--time-animation) var(--cubic-bezier);
+  }
+  .clients-card-ref:hover,
+  .clients-card-ref:focus {
+    fill: var(--blue);
+    border-color: var(--blue);
+  }
