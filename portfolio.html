@@ -16,18 +16,18 @@
   <body>
     <!--Header-->
     <header class="header">
-      <div class="container header-block">
-        <a class="logo header-logo" href="./index.html"><span>Web</span>Studio</a>
-        <nav class="header-nav">
+      <div class="container header__container">
+        <a class="logo" href="./index.html"><span>Web</span>Studio</a>
+        <nav>
           <ul class="header-menu">
-            <li><a class="header-menu-link" href="./index.html">Студія</a></li>
-            <li><a class="header-menu-link active" href="./portfolio.html">Портфоліо</a></li>
-            <li><a class="header-menu-link" href="#">Контакти</a></li>
+            <li><a class="header-menu__item" href="./index.html">Студія</a></li>
+            <li><a class="header-menu__item header-menu__item--active" href="./portfolio.html">Портфоліо</a></li>
+            <li><a class="header-menu__item" href="#">Контакти</a></li>
           </ul>
         </nav>
         <ul class="header-contacts">
           <li>
-            <a class="header-contacts-link" href="mailto:info@devstudio.com">
+            <a class="header-contacts__link" href="mailto:info@devstudio.com">
               <svg class="contact-icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
@@ -35,7 +35,7 @@
             </a>
           </li>
           <li>
-            <a class="header-contacts-link" href="tel:+380961111111">
+            <a class="header-contacts__link" href="tel:+380961111111">
               <svg class="contact-icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
@@ -48,199 +48,199 @@
     <!-- Main content -->
     <main>
       <!--Section01 Portfolio-->
-      <section class="section portfolio">
+      <section class="portfolio section">
         <div class="container">
           <h1 class="scr-reader">Портфоліо</h1>
-          <ul class="portfolio-filters">
-            <li class="portfolio-filters-item">
-              <button class="portfolio-filters-btn" type="button">Усі</button>
+          <ul class="filters">
+            <li>
+              <button class="filters__btn" type="button">Усі</button>
             </li>
-            <li class="portfolio-filters-item">
-              <button class="portfolio-filters-btn" type="button">Веб-сайти</button>
+            <li>
+              <button class="filters__btn" type="button">Веб-сайти</button>
             </li>
-            <li class="portfolio-filters-item">
-              <button class="portfolio-filters-btn" type="button">Додатки</button>
+            <li>
+              <button class="filters__btn" type="button">Додатки</button>
             </li>
-            <li class="portfolio-filters-item">
-              <button class="portfolio-filters-btn" type="button">Дизайн</button>
+            <li>
+              <button class="filters__btn" type="button">Дизайн</button>
             </li>
-            <li class="portfolio-filters-item">
-              <button class="portfolio-filters-btn" type="button">Маркетинг</button>
+            <li>
+              <button class="filters__btn" type="button">Маркетинг</button>
             </li>
           </ul>
           <!-- <h1>Приклади робіт</h1> -->
-          <ul class="card-set">
-            <li class="card">
-              <a class="card-interactive" href="#">
-                <div class="card-box">
+          <ul class="card">
+            <li class="card__item">
+              <a class="card__interactive" href="#">
+                <div class="card__box">
                   <img
                     src="./images/project01-tekhnokriak.jpg"
                     alt="Приклад вебсайту Технокряк"
                     width="370"
                   />
-                  <div class="card-overlay">
-                    <p class="card-text">
+                  <div class="card__overlay">
+                    <p class="card__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                       приватну особу.
                     </p>
                   </div>
                 </div>
-                <div class="card-descr">
-                  <h2 class="card-title">Технокряк</h2>
-                  <p class="card-tag">Веб-сайт</p>
+                <div class="card__descr">
+                  <h2 class="card__title">Технокряк</h2>
+                  <p class="card__tag">Веб-сайт</p>
                 </div>
               </a>
             </li>
 
-            <li class="card">
-              <a class="card-interactive" href="#">
-                <div class="card-box">
+            <li class="card__item">
+              <a class="card__interactive" href="#">
+                <div class="card__box">
                   <img
                     src="./images/project02-poster.jpg"
                     alt="Приклад дизайну постеру"
                     width="370"
                   />
-                  <div class="card-overlay">
-                    <p class="card-text"></p>
+                  <div class="card__overlay">
+                    <p class="card__text"></p>
                   </div>
                 </div>
-                <div class="card-descr">
-                  <h2 class="card-title">Постер New Orlean vs Golden Star</h2>
-                  <p class="card-tag">Дизайн</p>
+                <div class="card__descr">
+                  <h2 class="card__title">Постер New Orlean vs Golden Star</h2>
+                  <p class="card__tag">Дизайн</p>
                 </div>
               </a>
             </li>
 
-            <li class="card">
-              <a class="card-interactive" href="#">
-                <div class="card-box">
+            <li class="card__item">
+              <a class="card__interactive" href="#">
+                <div class="card__box">
                   <img
                     src="./images/project03-seafood.jpg"
                     alt="Приклад додатку ресторану Сіфуд"
                     width="370"
                   />
-                  <div class="card-overlay">
-                    <p class="card-text"></p>
+                  <div class="card__overlay">
+                    <p class="card__text"></p>
                   </div>
                 </div>
-                <div class="card-descr">
-                  <h2 class="card-title">Ресторан Seafood</h2>
-                  <p class="card-tag">Додаток</p>
+                <div class="card__descr">
+                  <h2 class="card__title">Ресторан Seafood</h2>
+                  <p class="card__tag">Додаток</p>
                 </div>
               </a>
             </li>
 
-            <li class="card">
-              <a class="card-interactive" href="#">
-                <div class="card-box">
+            <li class="card__item">
+              <a class="card__interactive" href="#">
+                <div class="card__box">
                   <img
                     src="./images/project04-prime.jpg"
                     alt="Приклад маркетингового проєкту Прайм "
                     width="370"
                   />
-                  <div class="card-overlay">
-                    <p class="card-text"></p>
+                  <div class="card__overlay">
+                    <p class="card__text"></p>
                   </div>
                 </div>
-                <div class="card-descr">
-                  <h2 class="card-title">Проєкт Prime</h2>
-                  <p class="card-tag">Маркетинг</p>
+                <div class="card__descr">
+                  <h2 class="card__title">Проєкт Prime</h2>
+                  <p class="card__tag">Маркетинг</p>
                 </div>
               </a>
             </li>
 
-            <li class="card">
-              <a class="card-interactive" href="#">
-                <div class="card-box">
+            <li class="card__item">
+              <a class="card__interactive" href="#">
+                <div class="card__box">
                   <img
                     src="./images/project05-boxes.jpg"
                     alt="Приклад додатку Боксез"
                     width="370"
                   />
-                  <div class="card-overlay">
-                    <p class="card-text"></p>
+                  <div class="card__overlay">
+                    <p class="card__text"></p>
                   </div>
                 </div>
-                <div class="card-descr">
-                  <h2 class="card-title">Проєкт Boxes</h2>
-                  <p class="card-tag">Додаток</p>
+                <div class="card__descr">
+                  <h2 class="card__title">Проєкт Boxes</h2>
+                  <p class="card__tag">Додаток</p>
                 </div>
               </a>
             </li>
 
-            <li class="card">
-              <a class="card-interactive" href="#">
-                <div class="card-box">
+            <li class="card__item">
+              <a class="card__interactive" href="#">
+                <div class="card__box">
                   <img
                     src="./images/project06-inspiration.jpg"
                     alt="Приклад вебсайту Інспірейшен"
                     width="370"
                   />
-                  <div class="card-overlay">
-                    <p class="card-text"></p>
+                  <div class="card__overlay">
+                    <p class="card__text"></p>
                   </div>
                 </div>
-                <div class="card-descr">
-                  <h2 class="card-title">Inspiration has no Borders</h2>
-                  <p class="card-tag">Веб-сайт</p>
+                <div class="card__descr">
+                  <h2 class="card__title">Inspiration has no Borders</h2>
+                  <p class="card__tag">Веб-сайт</p>
                 </div>
               </a>
             </li>
 
-            <li class="card">
-              <a class="card-interactive" href="#">
-                <div class="card-box">
+            <li class="card__item">
+              <a class="card__interactive" href="#">
+                <div class="card__box">
                   <img
                     src="./images/project07-limited.jpg"
                     alt="Приклад дизайну видання Лімітед Едішен"
                     width="370"
                   />
-                  <div class="card-overlay">
-                    <p class="card-text"></p>
+                  <div class="card__overlay">
+                    <p class="card__text"></p>
                   </div>
                 </div>
-                <div class="card-descr">
-                  <h2 class="card-title">Видання Limited Edition</h2>
-                  <p class="card-tag">Дизайн</p>
+                <div class="card__descr">
+                  <h2 class="card__title">Видання Limited Edition</h2>
+                  <p class="card__tag">Дизайн</p>
                 </div>
               </a>
             </li>
 
-            <li class="card">
-              <a class="card-interactive" href="#">
-                <div class="card-box">
+            <li class="card__item">
+              <a class="card__interactive" href="#">
+                <div class="card__box">
                   <img
                     src="./images/project08-lab.jpg"
                     alt="Приклад маркетингового проєкту Лаб "
                     width="370"
                   />
-                  <div class="card-overlay">
-                    <p class="card-text"></p>
+                  <div class="card__overlay">
+                    <p class="card__text"></p>
                   </div>
                 </div>
-                <div class="card-descr">
-                  <h2 class="card-title">Проєкт LAB</h2>
-                  <p class="card-tag">Маркетинг</p>
+                <div class="card__descr">
+                  <h2 class="card__title">Проєкт LAB</h2>
+                  <p class="card__tag">Маркетинг</p>
                 </div>
               </a>
             </li>
 
-            <li class="card">
-              <a class="card-interactive" href="#">
-                <div class="card-box">
+            <li class="card__item">
+              <a class="card__interactive" href="#">
+                <div class="card__box">
                   <img
                     src="./images/project09-business.jpg"
                     alt="Приклад додатку Гроуінг Бізнес"
                     width="370"
                   />
-                  <div class="card-overlay">
-                    <p class="card-text"></p>
+                  <div class="card__overlay">
+                    <p class="card__text"></p>
                   </div>
                 </div>
-                <div class="card-descr">
-                  <h2 class="card-title">Growing Business</h2>
-                  <p class="card-tag">Додаток</p>
+                <div class="card__descr">
+                  <h2 class="card__title">Growing Business</h2>
+                  <p class="card__tag">Додаток</p>
                 </div>
               </a>
             </li>
