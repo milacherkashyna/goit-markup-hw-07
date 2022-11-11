@@ -650,7 +650,8 @@ ul {
   color: var(--white);
 }
 
-.join__title, .subscribe__title {
+.join__title,
+.subscribe__title {
   display: block;
   margin-top: 0;
   margin-bottom: 20px;
